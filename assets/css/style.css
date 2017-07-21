@@ -117,8 +117,8 @@ textarea{
 }
 
 .aboutMe img{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 100%;
   float: left;
   margin-right: 10px;
 }
@@ -192,4 +192,83 @@ footer{
   justify-content: center;
   color: #e0e0e0;
   flex: 0 0 auto;
+}
+
+@media screen and (max-width: 980px) {
+  header{
+    padding: 0px 10%;
+    justify-content: space-between;
+  }
+  .content{
+    width: 85%;
+    justify-content: space-around;
+  }
+  .main{
+    width: 300px;
+  }
+
+  .connectWithMe{
+    width: 300px;
+  }
+
+  .aboutMe img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+    flex-direction: column;
+  }
+
+  .main, .connectWithMe{
+    width: 100%
+  }
+
+  .aboutMe{
+    margin-bottom: 30px;
+  }
+
+  .connectWithMe{
+    margin-top: 30px;
+  }
+
+  .aboutMe img{
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  header{
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name{
+    text-align: center;
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  header nav ul{
+    justify-content: space-around;
+  }
+
+  header nav ul li{
+    padding: 10px 0px;
+  }
+
+  header nav ul li:not(:last-child){
+    padding-right: 0px;
+    border: 0px;
+  }
+
+  .aboutMe img{
+    width: 100%;
+  }
 }
