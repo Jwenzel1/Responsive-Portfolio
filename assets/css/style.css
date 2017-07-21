@@ -237,6 +237,15 @@ footer{
     width: 150px;
   }
 
+  .portfolioItem{
+    width: 245px;
+    height: 200px;
+  }
+
+  .portfolioItem p{
+    top: 115px;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
